@@ -10,7 +10,7 @@ const resurser = {
 const requestHandler = (req, res) => {
     console.log('handling request')
     if (req.method === 'GET') {
-
+        console.log(req.url)
         const reqURL = req.url;
         const reqRSRC = reqURL.slice('/');
         console.log(reqRSRC);
